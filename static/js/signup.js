@@ -1,4 +1,4 @@
-// Falmouth Unplugged sign-up form → Cloudflare Worker proxy → Four Norms API
+// Falmouth for Intentional Tech sign-up form → Cloudflare Worker proxy → Four Norms API
 (function () {
   const form = document.getElementById('fn-signup');
   if (!form) return;
@@ -35,7 +35,7 @@
   function setLoading(on) {
     btn.disabled = on;
     form.classList.toggle('loading', on);
-    btn.querySelector('.btn-label').textContent = on ? 'Joining…' : 'Join Falmouth Unplugged';
+    btn.querySelector('.btn-label').textContent = on ? 'Joining…' : 'Join Falmouth for Intentional Tech';
   }
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const list = (errs) => '<ul>' + errs.map((e) => `<li>${esc(e)}</li>`).join('') + '</ul>';

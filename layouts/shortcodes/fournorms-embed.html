@@ -5,7 +5,7 @@
 {{ $src := cond (eq $kind "events") $fn.eventsEmbed $fn.actionsEmbed }}
 {{ with $src }}
 <div class="fn-embed">
-  <iframe src="{{ . }}" title="Falmouth Unplugged {{ $kind }} (Four Norms)" allow="clipboard-write"
+  <iframe src="{{ . }}" title="Falmouth for Intentional Tech {{ $kind }} (Four Norms)" allow="clipboard-write"
           width="100%" height="{{ $fn.embedHeight | default 1200 }}" frameborder="0" loading="lazy" style="border: none;"></iframe>
 </div>
 {{ end }}

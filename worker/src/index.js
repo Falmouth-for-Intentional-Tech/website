@@ -1,5 +1,5 @@
 /**
- * Falmouth Unplugged: signup proxy (Cloudflare Worker)
+ * Falmouth for Intentional Tech: signup proxy (Cloudflare Worker)
  *
  * Browser  ->  POST /api/supporters  (this Worker)  ->  Four Norms API  ->  back to browser
  *

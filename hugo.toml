@@ -3,13 +3,13 @@
 # ------------------------------------------------------------
 baseURL = "https://falmouthfit.org/"
 locale = "en-us"
-title = "Falmouth Unplugged"
+title = "Falmouth for Intentional Tech"
 disableKinds = ["taxonomy", "term", "RSS"]
 ignoreFiles = ["worker/"]
 
 [params]
   tagline  = "Falmouth parents working toward healthier, more intentional tech use in our schools and homes."
-  location = "Falmouth & Cape Cod, MA"
+  location = "Falmouth, MA"
   footerBlurb = "Falmouth parents working toward healthier, more intentional tech use for our kids."
   email    = "hello@example.org"   # TODO: group contact email
 
@@ -20,7 +20,7 @@ ignoreFiles = ["worker/"]
   # "https://falmouth-unplugged-signup.<your-account>.workers.dev/api/supporters"
   # While empty, Join buttons go to the Four Norms form instead of the on-site /join/ page.
   signupEndpoint = ""
-  signupLabel   = "Join Falmouth Unplugged"
+  signupLabel   = "Join Falmouth for Intentional Tech"
   petitionURL   = ""                 # optional: leave "" to hide the petition button
   petitionLabel = "Sign the petition"
 

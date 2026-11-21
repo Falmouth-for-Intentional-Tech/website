@@ -4,10 +4,10 @@
 # ------------------------------------------------------------
 
 hero:
-  eyebrow: "Parent to parent · Falmouth & Cape Cod, MA"
+  eyebrow: "Parent to parent · Falmouth, MA"
   heading: "Room to grow up."          # TODO: your slogan
   text: >-
-    We're Cape Cod parents who want our kids' days, at school and at home,
+    We're Falmouth parents who want our kids' days, at school and at home,
     to have room for focus, play, and real connection. We're not anti-tech.
     We're for using it on purpose.
   # Secondary button next to "Join". Leave url "" to hide it.
@@ -16,7 +16,7 @@ hero:
 
 stat:
   number: "0+"                         # TODO: e.g. "75+"
-  label: "Cape Cod parents and counting"
+  label: "Falmouth parents and counting"
 
 quote:
   # TODO: your own words
@@ -35,10 +35,10 @@ about:
     - >-
       We bring parents together to share what's working, learn from the
       research, and work constructively with our schools.
-  leaders: "Organized by Cape Cod parent volunteers."   # TODO: names, optional
+  leaders: "Organized by Falmouth parent volunteers."   # TODO: names, optional
   partner:
     name: "Turning Life On"
-    text: "Falmouth Unplugged is a community of Turning Life On, a coalition of parent-led groups across Massachusetts."
+    text: "Falmouth for Intentional Tech is a community of Turning Life On, a coalition of parent-led groups across Massachusetts."
     url: "https://www.fournorms.com/turning-life-on"
     label: "Learn about Turning Life On"
 
@@ -46,7 +46,7 @@ data:
   heading: "What Massachusetts teens are telling us"
   intro: >-
     Massachusetts high schoolers answered CDC's 2025 Youth Risk Behavior Survey.
-    These are statewide numbers. We'd love to add Cape Cod data as it becomes available.
+    These are statewide numbers. We'd love to add Falmouth data as it becomes available.
   cards:
     - big: "81%"
       label: "use social media several times a day"
@@ -64,10 +64,10 @@ goals:
   cards:
     - title: "Informed choices"
       text: "Clear, readable summaries of the evidence so families can decide what's right for them."
-    - title: "Screen-free time together"
-      text: "Events and shared norms that make it easier to choose play, outdoors, and friends."
     - title: "Thoughtful school policy"
       text: "Working with teachers and administrators on purposeful classroom tech and phone policies."
+    - title: "Screen-free time together"
+      text: "Events and shared norms that make it easier to choose play, outdoors, and friends."
 
 closing:
   heading: "You don't have to figure this out alone."

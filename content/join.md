@@ -1,5 +1,5 @@
 ---
-title: Join Falmouth Unplugged
+title: Join Falmouth for Intentional Tech
 description: Sign up to hear about meetings, events and ways to help.
 ---
 

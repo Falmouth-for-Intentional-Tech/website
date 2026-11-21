@@ -1,0 +1,6 @@
+<div class="cta">
+  <a class="btn" href="{{ partial "signup-url.html" . }}" {{ if not site.Params.signupEndpoint }}target="_blank" rel="noopener"{{ end }}>{{ site.Params.signupLabel }}</a>
+  {{ with site.Params.petitionURL }}
+  <a class="btn btn-outline" href="{{ . }}" target="_blank" rel="noopener">{{ site.Params.petitionLabel }}</a>
+  {{ end }}
+</div>

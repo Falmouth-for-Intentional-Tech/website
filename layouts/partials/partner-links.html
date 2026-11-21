@@ -1,0 +1,1 @@
+{{ range $i, $p := site.Params.partners }}{{ if $i }} · {{ end }}{{ if $p.url }}<a href="{{ $p.url }}" target="_blank" rel="noopener">{{ $p.name }}</a>{{ else }}{{ $p.name }}{{ end }}{{ end }}

@@ -1,0 +1,4 @@
+# Copy to .dev.vars (gitignored) for local testing with `npx wrangler dev`.
+# Never commit .dev.vars.
+FOUR_NORMS_API_KEY=paste-your-key-here
+FOUR_NORMS_GROUP_SLUG=falmouth-unplugged

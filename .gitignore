@@ -1,0 +1,11 @@
+public/
+resources/_gen/
+.hugo_build.lock
+.DS_Store
+preview/
+# secrets / local env (never commit)
+.env
+.env.*
+worker/.dev.vars
+worker/node_modules/
+worker/.wrangler/

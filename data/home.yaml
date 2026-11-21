@@ -1,0 +1,74 @@
+# ------------------------------------------------------------
+#  Home page content. Edit the text here; the layout is in layouts/index.html.
+#  Lines marked TODO are placeholders.
+# ------------------------------------------------------------
+
+hero:
+  eyebrow: "Parent to parent · Falmouth & Cape Cod, MA"
+  heading: "Room to grow up."          # TODO: your slogan
+  text: >-
+    We're Cape Cod parents who want our kids' days, at school and at home,
+    to have room for focus, play, and real connection. We're not anti-tech.
+    We're for using it on purpose.
+  # Secondary button next to "Join". Leave url "" to hide it.
+  secondary_label: "Just send me updates"
+  secondary_url: "updates"            # "updates" = the site's updates-only sign-up; or any URL; "" hides it
+
+stat:
+  number: "0+"                         # TODO: e.g. "75+"
+  label: "Cape Cod parents and counting"
+
+quote:
+  # TODO: your own words
+  text: >-
+    Whatever your family's rules are today, you're welcome here. We're
+    figuring this out together.
+  attribution: ""
+
+about:
+  heading: "You're not the only one thinking about this"
+  paragraphs:
+    - >-
+      Lots of families feel it: the pull of screens at home, more devices in
+      the classroom, and the pressure when "everyone else" has a phone.
+      It's hard to push back one household at a time.
+    - >-
+      We bring parents together to share what's working, learn from the
+      research, and work constructively with our schools.
+  leaders: "Organized by Cape Cod parent volunteers."   # TODO: names, optional
+  partner:
+    name: "Turning Life On"
+    text: "Falmouth Unplugged is a community of Turning Life On, a coalition of parent-led groups across Massachusetts."
+    url: "https://www.fournorms.com/turning-life-on"
+    label: "Learn about Turning Life On"
+
+data:
+  heading: "What Massachusetts teens are telling us"
+  intro: >-
+    Massachusetts high schoolers answered CDC's 2025 Youth Risk Behavior Survey.
+    These are statewide numbers. We'd love to add Cape Cod data as it becomes available.
+  cards:
+    - big: "81%"
+      label: "use social media several times a day"
+    - big: "Only 26%"
+      label: "get 8+ hours of sleep on a school night"
+    - big: "28%"
+      label: "felt sad or hopeless almost every day for 2+ weeks in the past year"
+    - big: "1 in 9"
+      label: "were bullied electronically in the past year"
+  source: "Source: CDC Youth Risk Behavior Survey, Massachusetts high school students, 2025 (YRBS Explorer)."
+  pdf_url: ""                          # optional link to full results
+
+goals:
+  heading: "What we're working toward"
+  cards:
+    - title: "Informed choices"
+      text: "Clear, readable summaries of the evidence so families can decide what's right for them."
+    - title: "Screen-free time together"
+      text: "Events and shared norms that make it easier to choose play, outdoors, and friends."
+    - title: "Thoughtful school policy"
+      text: "Working with teachers and administrators on purposeful classroom tech and phone policies."
+
+closing:
+  heading: "You don't have to figure this out alone."
+  text: "Join the group to hear about meetings, events, and ways to help."

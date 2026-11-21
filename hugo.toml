@@ -1,0 +1,89 @@
+# ------------------------------------------------------------
+#  Site settings: edit these first
+# ------------------------------------------------------------
+baseURL = "https://falmouthfit.org/"
+locale = "en-us"
+title = "Falmouth Unplugged"
+disableKinds = ["taxonomy", "term", "RSS"]
+ignoreFiles = ["worker/"]
+
+[params]
+  tagline  = "Falmouth parents working toward healthier, more intentional tech use in our schools and homes."
+  location = "Falmouth & Cape Cod, MA"
+  footerBlurb = "Falmouth parents working toward healthier, more intentional tech use for our kids."
+  email    = "hello@example.org"   # TODO: group contact email
+
+  # Every "Join" button on the site uses signupURL, so switching
+  # platforms (Four Norms <-> Schools Beyond Screens) is a one-line change.
+  signupURL     = ""                 # leave empty: Join buttons use the Four Norms group below
+  # URL of the deployed Cloudflare Worker sign-up proxy (see worker/README.md), e.g.
+  # "https://falmouth-unplugged-signup.<your-account>.workers.dev/api/supporters"
+  # While empty, Join buttons go to the Four Norms form instead of the on-site /join/ page.
+  signupEndpoint = ""
+  signupLabel   = "Join Falmouth Unplugged"
+  petitionURL   = ""                 # optional: leave "" to hide the petition button
+  petitionLabel = "Sign the petition"
+
+  # ----------------------------------------------------------
+  #  Four Norms group (your community hub)
+  #  All Join buttons go to groupURL + "#register" (the sign-up form on that page).
+  #  "Just send me updates" goes to groupURL + "#email-signup" (email-only list, same Four Norms group).
+  #  Four Norms provides embeddable widgets for Actions (petitions/pledges) and Events;
+  #  these appear directly on the Get Involved and Events pages. The sign-up form itself
+  #  has no embed, so Join buttons open the group page's form.
+  # ----------------------------------------------------------
+  [params.fournorms]
+    groupURL     = "https://www.fournorms.com/turning-life-on/falmouth-unplugged"
+    actionsEmbed = "https://www.fournorms.com/groups/falmouth-unplugged/actions/embed"
+    eventsEmbed  = "https://www.fournorms.com/groups/falmouth-unplugged/events/embed"
+    embedHeight  = 1200     # pixels; lower it once you see how tall your lists actually are
+
+  [[params.partners]]
+    name = "Turning Life On (MA coalition)"
+    url  = "https://www.fournorms.com/turning-life-on"
+  [[params.partners]]
+    name = "Schools Beyond Screens"
+    url  = ""                        # TODO: national SBS link or your chapter page
+
+# ------------------------------------------------------------
+#  Navigation (header order)
+# ------------------------------------------------------------
+[menus]
+  [[menus.main]]
+    name = "About"
+    pageRef = "/"
+    weight = 1
+    [menus.main.params]
+      anchor = "about"
+  [[menus.main]]
+    name = "The Data"
+    pageRef = "/"
+    weight = 2
+    [menus.main.params]
+      anchor = "data"
+  [[menus.main]]
+    name = "Our Goals"
+    pageRef = "/"
+    weight = 3
+    [menus.main.params]
+      anchor = "goals"
+  [[menus.main]]
+    name = "Classroom Tech"
+    pageRef = "/classroom-tech"
+    weight = 4
+  [[menus.main]]
+    name = "Events"
+    pageRef = "/events"
+    weight = 5
+  [[menus.main]]
+    name = "Resources"
+    pageRef = "/resources"
+    weight = 6
+  [[menus.main]]
+    name = "Get involved"
+    pageRef = "/get-involved"
+    weight = 7
+
+[markup.goldmark.renderer]
+  unsafe = true   # allows the small bits of HTML (cards) in Markdown pages
+

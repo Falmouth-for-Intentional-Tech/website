@@ -1,0 +1,46 @@
+{{/* Usage: {{< signup-form >}}
+     Branded sign-up form. Posts to the Cloudflare Worker proxy (hugo.toml params.signupEndpoint),
+     which adds the person to the Falmouth Unplugged group on Four Norms. */}}
+{{ $endpoint := site.Params.signupEndpoint }}
+{{ $fallback := printf "%s#register" site.Params.fournorms.groupURL }}
+<form id="fn-signup" class="signup card" novalidate data-endpoint="{{ $endpoint }}" data-fallback="{{ $fallback }}">
+  <div class="signup-grid">
+    <label><span class="lbl">First name <span class="req" aria-hidden="true">*</span></span>
+      <input name="first_name" autocomplete="given-name" required maxlength="100">
+    </label>
+    <label><span class="lbl">Last name</span>
+      <input name="last_name" autocomplete="family-name" maxlength="100">
+    </label>
+    <label class="span-2"><span class="lbl">Email <span class="req" aria-hidden="true">*</span></span>
+      <input name="email" type="email" autocomplete="email" required maxlength="100">
+    </label>
+    <label><span class="lbl">ZIP code</span>
+      <input name="zip_code" inputmode="numeric" autocomplete="postal-code" pattern="\d{5}(-\d{4})?" maxlength="10" placeholder="02540">
+    </label>
+  </div>
+
+  <fieldset class="signup-choice">
+    <legend>How would you like to join?</legend>
+    <label class="choice"><input type="radio" name="send_invite" value="true" checked>
+      <span><strong>Become a member</strong>: we'll email you an invite to create your Four Norms account (RSVP to events, sign pledges, see the group).</span></label>
+    <label class="choice"><input type="radio" name="send_invite" value="false">
+      <span><strong>Just send me updates</strong>: occasional emails about meetings and news.</span></label>
+  </fieldset>
+
+  {{/* Honeypot: hidden from people, bots fill it in */}}
+  <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+
+  <div class="signup-msg" role="status" aria-live="polite" hidden></div>
+
+  <button class="btn" type="submit"><span class="btn-label">Join Falmouth Unplugged</span><span class="spinner" aria-hidden="true"></span></button>
+  <p class="muted small">We use Four Norms, a free organizing platform for parent groups, to keep our member list. We'll never share your information.</p>
+</form>
+
+<div id="fn-signup-success" class="card signup-success" hidden tabindex="-1">
+  <h3>You're in. Welcome! 🎉</h3>
+  <p class="success-invite">Check your inbox for an invite from Four Norms to finish setting up your account. (Peek in spam or promotions if you don't see it.)</p>
+  <p class="success-lead" hidden>You're on the list. We'll email you about upcoming meetings and news.</p>
+  <p><a href="{{ "events/" | relURL }}">See upcoming events →</a></p>
+</div>
+
+<script src="{{ "js/signup.js" | relURL }}" defer></script>

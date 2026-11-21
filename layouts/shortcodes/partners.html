@@ -1,0 +1,6 @@
+{{/* Usage: {{< partners >}}  renders a bulleted list of partner orgs from hugo.toml */}}
+<ul>
+{{ range site.Params.partners }}
+  <li>{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</li>
+{{ end }}
+</ul>

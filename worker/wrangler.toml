@@ -1,0 +1,12 @@
+name = "falmouth-unplugged-signup"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+
+[vars]
+FOUR_NORMS_GROUP_SLUG = "falmouth-unplugged"
+# Comma-separated origins allowed to submit the form. Add your custom domain when you have one.
+ALLOWED_ORIGINS = "https://falmouthfit.org,https://www.falmouthfit.org,http://localhost:1313"
+
+# The API key is NOT stored here. Set it as an encrypted secret:
+#   npx wrangler secret put FOUR_NORMS_API_KEY
+# For local dev, put it in worker/.dev.vars (gitignored); see .dev.vars.example.

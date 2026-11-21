@@ -1,0 +1,77 @@
+{{ define "main" }}
+{{ $h := site.Data.home }}
+
+<section class="hero">
+  <p class="eyebrow">{{ $h.hero.eyebrow }}</p>
+  <h1>{{ $h.hero.heading }}</h1>
+  <p class="tagline">{{ $h.hero.text }}</p>
+  <div class="cta">
+    <a class="btn" href="{{ partial "signup-url.html" . }}" {{ if not site.Params.signupEndpoint }}target="_blank" rel="noopener"{{ end }}>{{ site.Params.signupLabel }} →</a>
+    {{ with $h.hero.secondary_url }}<a class="btn btn-outline" href="{{ if eq . "updates" }}{{ partial "updates-url.html" $ }}{{ else }}{{ . }}{{ end }}">{{ $h.hero.secondary_label }}</a>{{ end }}
+  </div>
+</section>
+
+<section class="band band-tint">
+  <div class="split">
+    <div class="stat">
+      <span class="stat-number">{{ $h.stat.number }}</span>
+      <span class="stat-label">{{ $h.stat.label }}</span>
+    </div>
+    <blockquote class="pull">
+      {{ $h.quote.text }}
+      {{ with $h.quote.attribution }}<cite>{{ . }}</cite>{{ end }}
+    </blockquote>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>{{ $h.about.heading }}</h2>
+  {{ range $h.about.paragraphs }}<p>{{ . }}</p>{{ end }}
+  <p class="muted">{{ $h.about.leaders }}</p>
+  {{ with $h.about.partner }}
+  <div class="card partner">
+    <h3>Partner: {{ .name }}</h3>
+    <p>{{ .text }}</p>
+    {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $h.about.partner.label }} →</a>{{ end }}
+  </div>
+  {{ end }}
+</section>
+
+<section id="data" class="section">
+  <h2>{{ $h.data.heading }}</h2>
+  <p>{{ $h.data.intro }}</p>
+  <div class="cards cards-4">
+    {{ range $h.data.cards }}
+    <div class="card stat-card">
+      <span class="stat-number">{{ .big }}</span>
+      <p>{{ .label }}</p>
+    </div>
+    {{ end }}
+  </div>
+  <p class="muted small">{{ $h.data.source }}{{ with $h.data.pdf_url }} <a href="{{ . }}">Full results (PDF) →</a>{{ end }}</p>
+</section>
+
+<section id="goals" class="section">
+  <h2>{{ $h.goals.heading }}</h2>
+  <div class="cards">
+    {{ range $i, $c := $h.goals.cards }}
+    <div class="card">
+      <span class="card-num">{{ add $i 1 }}</span>
+      <h3>{{ $c.title }}</h3>
+      <p>{{ $c.text }}</p>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+<section class="band band-accent closing">
+  <h2>{{ $h.closing.heading }}</h2>
+  <p>{{ $h.closing.text }}</p>
+  <div class="cta">
+    <a class="btn btn-light" href="{{ partial "signup-url.html" . }}" {{ if not site.Params.signupEndpoint }}target="_blank" rel="noopener"{{ end }}>{{ site.Params.signupLabel }} →</a>
+    {{ with $h.hero.secondary_url }}<a class="btn btn-outline-light" href="{{ if eq . "updates" }}{{ partial "updates-url.html" $ }}{{ else }}{{ . }}{{ end }}">{{ $h.hero.secondary_label }}</a>{{ end }}
+  </div>
+</section>
+
+{{ .Content }}
+{{ end }}

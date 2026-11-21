@@ -1,0 +1,1 @@
+{{- if site.Params.signupEndpoint -}}{{ "join/" | relURL }}{{- else if site.Params.fournorms.groupURL -}}{{ site.Params.fournorms.groupURL }}#register{{- else -}}{{ site.Params.signupURL }}{{- end -}}

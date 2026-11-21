@@ -1,0 +1,11 @@
+{{/* Usage: {{< fournorms-embed "actions" >}} or {{< fournorms-embed "events" >}}
+     Shows the Four Norms widget inline. URLs/height in hugo.toml [params.fournorms]. */}}
+{{ $kind := .Get 0 | default "actions" }}
+{{ $fn := site.Params.fournorms }}
+{{ $src := cond (eq $kind "events") $fn.eventsEmbed $fn.actionsEmbed }}
+{{ with $src }}
+<div class="fn-embed">
+  <iframe src="{{ . }}" title="Falmouth Unplugged {{ $kind }} (Four Norms)" allow="clipboard-write"
+          width="100%" height="{{ $fn.embedHeight | default 1200 }}" frameborder="0" loading="lazy" style="border: none;"></iframe>
+</div>
+{{ end }}

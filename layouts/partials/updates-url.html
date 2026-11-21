@@ -1,0 +1,1 @@
+{{- if site.Params.signupEndpoint -}}{{ "join/?updates=1" | relURL }}{{- else if site.Params.fournorms.groupURL -}}{{ site.Params.fournorms.groupURL }}#email-signup{{- end -}}

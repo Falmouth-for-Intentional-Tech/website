@@ -13,9 +13,19 @@
 
 <section class="band band-tint">
   <div class="split">
+    {{ $count := 0 }}
+    {{ with site.Data.fournorms }}{{ $fn := . }}{{ range $h.stat.count_fields }}{{ $count = add $count (index $fn . | default 0) }}{{ end }}{{ end }}
     <div class="stat">
-      <span class="stat-number">{{ $h.stat.number }}</span>
+      {{ if ge $count ($h.stat.minimum | default 0) }}{{ if gt $count 0 }}
+      <span class="stat-number">{{ lang.FormatNumber 0 $count }}</span>
       <span class="stat-label">{{ $h.stat.label }}</span>
+      {{ else }}
+      <span class="stat-number">{{ $h.stat.fallback_number }}</span>
+      <span class="stat-label">{{ $h.stat.fallback_label }}</span>
+      {{ end }}{{ else }}
+      <span class="stat-number">{{ $h.stat.fallback_number }}</span>
+      <span class="stat-label">{{ $h.stat.fallback_label }}</span>
+      {{ end }}
     </div>
     <blockquote class="pull">
       {{ $h.quote.text }}

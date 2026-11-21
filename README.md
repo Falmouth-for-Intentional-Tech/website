@@ -33,6 +33,15 @@ The group hub on Four Norms is still named **Falmouth Unplugged** (URL slug `fal
   * Until `signupEndpoint` is set, every Join button links to the Four Norms form instead, so the site works either way.
 * **Petitions/pledges and events** appear on the page through Four Norms' embed widgets (`actionsEmbed`, `eventsEmbed`). Adjust `embedHeight` to suit.
 
+### Member count on the home page
+
+The home-page number comes from Four Norms. When GitHub builds the site, `.github/scripts/fetch_fournorms.py` reads the group's membership counts through the API and writes `data/fournorms.json`. The site rebuilds daily, so the number stays fresh.
+
+* **One-time setup:** in the repo, go to **Settings → Secrets and variables → Actions → New repository secret**. Name it `FOUR_NORMS_API_KEY` and paste the key. It's encrypted, and never appears in the code or the built site.
+* **What gets counted:** `count_fields` in `data/home.yaml`. Each build log prints the raw numbers under "Fetch member count from Four Norms", so check them once and remove any field that double-counts.
+* **Small numbers:** below `minimum` (10), the site shows "New, and growing" instead.
+* With no key, or if the API is down, the build still succeeds and shows the fallback.
+
 Shortcodes: `{{< signup-form >}}`, `{{< fournorms >}}` (hub card), `{{< fournorms-embed "actions" >}}`, `{{< fournorms-embed "events" >}}`.
 
 ## Preview locally

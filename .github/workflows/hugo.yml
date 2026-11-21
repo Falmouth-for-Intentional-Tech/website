@@ -6,6 +6,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: "17 10 * * *"   # daily rebuild (~6am ET) to refresh the member count
 
 permissions:
   contents: read
@@ -26,6 +28,12 @@ jobs:
         with:
           hugo-version: "latest"
           extended: true
+      - name: Fetch member count from Four Norms
+        env:
+          FOUR_NORMS_API_KEY: ${{ secrets.FOUR_NORMS_API_KEY }}
+          FOUR_NORMS_ORG_SLUG: turning-life-on
+          FOUR_NORMS_GROUP_SLUG: falmouth-unplugged
+        run: python3 .github/scripts/fetch_fournorms.py
       - id: pages
         uses: actions/configure-pages@v6
       - name: Build

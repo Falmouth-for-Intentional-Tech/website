@@ -9,3 +9,5 @@ preview/
 worker/.dev.vars
 worker/node_modules/
 worker/.wrangler/
+# written by the build from the Four Norms API
+data/fournorms.json

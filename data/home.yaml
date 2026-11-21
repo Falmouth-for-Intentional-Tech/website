@@ -15,8 +15,13 @@ hero:
   secondary_url: "updates"            # "updates" = the site's updates-only sign-up; or any URL; "" hides it
 
 stat:
-  number: "0+"                         # TODO: e.g. "75+"
+  # Live count comes from Four Norms at build time (data/fournorms.json, written by the
+  # GitHub Action; needs the FOUR_NORMS_API_KEY repo secret). Fields below are added up.
+  count_fields: [registered_member_count, email_subscriber_count, supporter_count]
   label: "Falmouth parents and counting"
+  minimum: 10            # below this, show the fallback instead of a small number
+  fallback_number: "New"
+  fallback_label: "and growing. Be one of the first Falmouth parents to join."
 
 quote:
   # TODO: your own words

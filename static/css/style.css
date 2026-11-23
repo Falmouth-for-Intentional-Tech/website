@@ -184,3 +184,45 @@ section[id] { scroll-margin-top: 1rem; }
 .signup-success { max-width: 640px; border-left: 4px solid var(--accent-bright); margin: 1.5rem 0; }
 .signup-success:focus { outline: none; }
 @media (max-width: 600px) { .signup-grid { grid-template-columns: 1fr; } .signup-grid .span-2 { grid-column: auto; } }
+
+/* ---------- Content pages (Classroom Tech, Evidence) ---------- */
+.page-head { background: var(--tint); border-radius: 16px; padding: 2rem 2rem 1.6rem; margin-bottom: 1.5rem; border-bottom: 4px solid var(--accent-bright); }
+.page-head h1 { margin-bottom: .6rem; }
+.page-head .eyebrow { color: var(--ink); }
+.page-head .lede { font-size: 1.1rem; max-width: 40em; }
+.page-head .lede p { margin: 0; }
+
+/* Section headings get a short coral bar above them */
+.prose h2 { font-size: 1.6rem; margin-top: 3rem; padding-top: 1rem; position: relative; }
+.prose h2::before { content: ""; position: absolute; top: 0; left: 0; width: 48px; height: 4px; border-radius: 2px; background: var(--accent-bright); }
+.prose h3 { margin-top: 2rem; }
+
+/* Card grids built with the grid/box shortcodes */
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin: 1.2rem 0 1.5rem; }
+.grid-3 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.box { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.1rem 1.2rem; }
+.box > :last-child { margin-bottom: 0; }
+.box h3 { margin: 0 0 .5rem; font-size: 1.08rem; }
+.box ul { padding-left: 1.1rem; margin: .4rem 0 0; }
+.box li { margin-bottom: .35rem; }
+.box p { margin: .4rem 0 0; }
+.box-eyebrow { text-transform: uppercase; letter-spacing: .08em; font-size: .75rem; font-weight: 700; color: var(--accent); margin: 0 0 .3rem !important; }
+.box-tint { background: var(--tint-soft); border-color: var(--tint-soft); }
+.box-accent { border-left: 4px solid var(--accent-bright); }
+.box-dark { background: var(--ink); border-color: var(--ink); color: #fff; }
+.box-dark a { color: #fff; }
+.box-dark h3 { color: #fff; }
+.box-big { font-size: 1.12rem; padding: 1.4rem 1.6rem; }
+.box-big p { margin: 0; }
+.tag { display: inline-block; font-size: .78rem; font-weight: 600; background: var(--tint); color: var(--ink); border-radius: 999px; padding: .1rem .6rem; margin-bottom: .2rem; }
+
+/* Quote from the district, set against the evidence */
+.quote-vs { margin: 1.2rem 0; font-size: 1.3rem; font-style: italic; border-left: 4px solid var(--accent-bright); padding: .2rem 0 .2rem 1.2rem; }
+.quote-vs cite { display: block; font-size: .9rem; font-style: normal; color: var(--muted); margin-top: .4rem; }
+
+@media (max-width: 600px) {
+  .page-head { padding: 1.4rem 1.2rem 1.2rem; }
+  .page-head h1 { font-size: 1.7rem; }
+  .prose h2 { font-size: 1.35rem; }
+  .quote-vs { font-size: 1.12rem; }
+}

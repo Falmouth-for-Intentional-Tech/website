@@ -38,11 +38,18 @@ about:
       We bring parents together to share what's working, learn from the
       research, and work constructively with our schools.
   leaders: "Organized by Falmouth parent volunteers."   # TODO: names, optional
-  partner:
-    name: "Turning Life On"
-    text: "Falmouth for Intentional Tech is a community of Turning Life On, a coalition of parent-led groups across Massachusetts."
-    url: "https://www.fournorms.com/turning-life-on"
-    label: "Learn about Turning Life On"
+  # Partner cards shown side by side under "About". Add or remove entries freely.
+  partners:
+    - name: "Turning Life On"
+      text: "Falmouth for Intentional Tech is a community of Turning Life On, a coalition of parent-led groups across Massachusetts."
+      url: "https://www.turninglifeon.org/"
+      label: "Learn about Turning Life On"
+      logo: "img/partners/turning-life-on.png"
+    - name: "Schools Beyond Screens"
+      text: "Our classroom tech recommendations are adapted from Schools Beyond Screens, a parent-led group working for evidence-based limits on screens in schools."
+      url: "https://www.schoolsbeyondscreens.com/"
+      label: "Visit Schools Beyond Screens"
+      logo: "img/partners/schools-beyond-screens.png"
 
 data:
   heading: "What Massachusetts teens are telling us"

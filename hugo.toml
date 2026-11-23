@@ -11,15 +11,15 @@ ignoreFiles = ["worker/"]
   tagline  = "Falmouth parents working toward healthier, more intentional tech use in our schools and homes."
   location = "Falmouth, MA"
   footerBlurb = "Falmouth parents working toward healthier, more intentional tech use for our kids."
-  email    = "hello@example.org"   # TODO: group contact email
+  email    = "hello@falmouthfit.org"   # group contact email (Cloudflare Email Routing)
 
   # Every "Join" button on the site uses signupURL, so switching
   # platforms (Four Norms <-> Schools Beyond Screens) is a one-line change.
   signupURL     = ""                 # leave empty: Join buttons use the Four Norms group below
   # URL of the deployed Cloudflare Worker sign-up proxy (see worker/README.md), e.g.
-  # "https://falmouth-unplugged-signup.<your-account>.workers.dev/api/supporters"
+  # "https://falmouth-for-intentional-tech-signup.<your-account>.workers.dev/api/supporters"
   # While empty, Join buttons go to the Four Norms form instead of the on-site /join/ page.
-  signupEndpoint = ""
+  signupEndpoint = "https://falmouth-for-intentional-tech-signup.harriet-xander.workers.dev/api/supporters"
   signupLabel   = "Join Falmouth for Intentional Tech"
   petitionURL   = ""                 # optional: leave "" to hide the petition button
   petitionLabel = "Sign the petition"
@@ -33,9 +33,9 @@ ignoreFiles = ["worker/"]
   #  has no embed, so Join buttons open the group page's form.
   # ----------------------------------------------------------
   [params.fournorms]
-    groupURL     = "https://www.fournorms.com/turning-life-on/falmouth-unplugged"
-    actionsEmbed = "https://www.fournorms.com/groups/falmouth-unplugged/actions/embed"
-    eventsEmbed  = "https://www.fournorms.com/groups/falmouth-unplugged/events/embed"
+    groupURL     = "https://www.fournorms.com/turning-life-on/falmouth-for-intentional-tech"
+    actionsEmbed = "https://www.fournorms.com/groups/falmouth-for-intentional-tech/actions/embed"
+    eventsEmbed  = "https://www.fournorms.com/groups/falmouth-for-intentional-tech/events/embed"
     embedHeight  = 1200     # pixels; lower it once you see how tall your lists actually are
 
   [[params.partners]]

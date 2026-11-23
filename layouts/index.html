@@ -82,6 +82,20 @@
     </div>
     {{ end }}
   </div>
+  {{ with $h.learn }}
+  <h3 class="learn-heading">{{ .heading }}</h3>
+  <div class="learn">
+    {{ range .cards }}
+    {{ $url := "" }}{{ with site.GetPage .page }}{{ $url = .RelPermalink }}{{ end }}
+    <a class="card learn-card" href="{{ $url }}">
+      <span class="box-eyebrow">{{ .eyebrow }}</span>
+      <h3>{{ .title }}</h3>
+      <p>{{ .text }}</p>
+      <span class="learn-link">{{ .label }} →</span>
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
 </section>
 
 <section class="band band-accent closing">

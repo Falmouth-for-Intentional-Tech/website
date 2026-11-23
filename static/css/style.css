@@ -226,3 +226,13 @@ section[id] { scroll-margin-top: 1rem; }
   .prose h2 { font-size: 1.35rem; }
   .quote-vs { font-size: 1.12rem; }
 }
+
+/* Home page: link cards to Classroom Tech and Evidence */
+.learn-heading { margin: 2rem 0 .2rem; font-size: 1.15rem; }
+.learn { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin: 1rem 0 1.5rem; }
+.learn-card { display: flex; flex-direction: column; text-decoration: none; color: var(--ink); background: var(--tint-soft); border-color: var(--tint); border-left: 4px solid var(--accent-bright); transition: transform .15s, box-shadow .15s; }
+.learn-card:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0 6px 18px rgba(72,74,71,.12); }
+.learn-card h3 { margin: .1rem 0 .4rem; }
+.learn-card p { color: var(--muted); margin: 0 0 .8rem; }
+.learn-link { margin-top: auto; font-weight: 600; color: var(--accent); }
+.learn-card:hover .learn-link { color: var(--accent-dark); }

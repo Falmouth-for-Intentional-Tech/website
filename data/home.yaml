@@ -78,6 +78,21 @@ goals:
     - title: "Screen-free time together"
       text: "Events and shared norms that make it easier to choose play, outdoors, and friends."
 
+# Link cards shown right after "What we're working toward".
+learn:
+  heading: "Learn more"
+  cards:
+    - eyebrow: "Classroom Tech"
+      title: "What we're asking Falmouth schools to change"
+      text: "Our recommendations, what the district does today, and the questions we're asking."
+      page: "/classroom-tech"
+      label: "See our asks"
+    - eyebrow: "The Evidence"
+      title: "The research and what other districts are doing"
+      text: "Key findings on screens in school, a Senate testimony video, and examples from Cambridge, LA, Worcester and Boston."
+      page: "/evidence"
+      label: "See the evidence"
+
 closing:
   heading: "You don't have to figure this out alone."
   text: "Join the group to hear about meetings, events, and ways to help."

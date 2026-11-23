@@ -7,9 +7,8 @@ hero:
   eyebrow: "Parent to parent · Falmouth, MA"
   heading: "Room to grow up."          # TODO: your slogan
   text: >-
-    We're Falmouth parents who want our kids' days, at school and at home,
-    to have room for focus, play, and real connection. We're not anti-tech.
-    We're for using it on purpose.
+    We are Falmouth parents advocating for school and home environments where focus, play, and real connection come first. Our goal isn't to eliminate technology, but ensure it is used purposefully.
+
   # Secondary button next to "Join". Leave url "" to hide it.
   secondary_label: "Just send me updates"
   secondary_url: "updates"            # "updates" = the site's updates-only sign-up; or any URL; "" hides it
@@ -26,17 +25,15 @@ stat:
 quote:
   # TODO: your own words
   text: >-
-    Whatever your family's rules are today, you're welcome here. We're
-    figuring this out together.
+    Come as you are, whatever your family's current tech routine looks like. There is no judgment here. We are all just trying to figure this out together. 
+
   attribution: ""
 
 about:
   heading: "You're not the only one thinking about this"
   paragraphs:
     - >-
-      Lots of families feel it: the pull of screens at home, more devices in
-      the classroom, and the pressure when "everyone else" has a phone.
-      It's hard to push back one household at a time.
+      Families everywhere are navigating the same challenges: the constant draw of screens at home, increasing device use at school, and the social pressure of "everyone else" having a phone. It’s hard to set boundaries when you feel like you’re doing it alone.
     - >-
       We bring parents together to share what's working, learn from the
       research, and work constructively with our schools.

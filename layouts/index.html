@@ -38,11 +38,21 @@
   <h2>{{ $h.about.heading }}</h2>
   {{ range $h.about.paragraphs }}<p>{{ . }}</p>{{ end }}
   <p class="muted">{{ $h.about.leaders }}</p>
-  {{ with $h.about.partner }}
-  <div class="card partner">
-    <h3>Partner: {{ .name }}</h3>
-    <p>{{ .text }}</p>
-    {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $h.about.partner.label }} →</a>{{ end }}
+  {{ with $h.about.partners }}
+  <div class="partners">
+    {{ range $p := . }}
+    <div class="card partner">
+      {{ with .logo }}
+      <a class="partner-logo" href="{{ $p.url }}" target="_blank" rel="noopener">
+        <img src="{{ . | relURL }}" alt="{{ $p.name }} logo" loading="lazy">
+      </a>
+      {{ end }}
+      <h3>Partner: {{ .name }}</h3>
+      <p>{{ .text }}</p>
+      {{ $label := .label | default (printf "Visit %s" .name) }}
+      {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $label }} →</a>{{ end }}
+    </div>
+    {{ end }}
   </div>
   {{ end }}
 </section>

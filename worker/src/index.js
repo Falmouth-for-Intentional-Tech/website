@@ -8,7 +8,7 @@
  *
  * Environment:
  *   FOUR_NORMS_API_KEY     secret   (wrangler secret put FOUR_NORMS_API_KEY)
- *   FOUR_NORMS_GROUP_SLUG  var      e.g. "falmouth-unplugged"
+ *   FOUR_NORMS_GROUP_SLUG  var      e.g. "falmouth-for-intentional-tech"
  *   ALLOWED_ORIGINS        var      comma-separated list of site origins allowed to call this
  *   FOUR_NORMS_API_BASE    var      optional, defaults to https://www.fournorms.com/api/v1
  */
@@ -86,6 +86,14 @@ export default {
     const text = await upstream.text();
     let upstreamJson = null;
     try { upstreamJson = text ? JSON.parse(text) : null; } catch { /* non-JSON body */ }
+
+    // One log line per sign-up (visible with `npx wrangler tail`). No names or emails, only
+    // Four Norms' status and its message/errors, so problems can be diagnosed.
+    console.log('Four Norms reply', upstream.status, JSON.stringify({
+      invite: payload.send_invite,
+      message: upstreamJson?.message ?? null,
+      errors: upstreamJson?.errors ?? null,
+    }));
 
     if (upstream.ok) {
       // Success: return Four Norms' JSON unchanged, e.g. {"status":"success","message":"Supporter Added"}.

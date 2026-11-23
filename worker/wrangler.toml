@@ -1,9 +1,11 @@
-name = "falmouth-unplugged-signup"
+name = "falmouth-for-intentional-tech-signup"
 main = "src/index.js"
 compatibility_date = "2026-11-01"
+workers_dev = true      # serve at *.workers.dev (the URL hugo.toml uses)
+preview_urls = false    # no extra per-version preview URLs
 
 [vars]
-FOUR_NORMS_GROUP_SLUG = "falmouth-unplugged"
+FOUR_NORMS_GROUP_SLUG = "falmouth-for-intentional-tech"
 # Comma-separated origins allowed to submit the form. Add your custom domain when you have one.
 ALLOWED_ORIGINS = "https://falmouthfit.org,https://www.falmouthfit.org,http://localhost:1313"
 

@@ -1,11 +1,11 @@
 # Sign-up proxy (Cloudflare Worker)
 
 The site's `/join/` form sends sign-ups here. This Worker adds the person to the
-**Falmouth Unplugged** group on Four Norms using the Four Norms API.
+**Falmouth for Intentional Tech** group on Four Norms using the Four Norms API.
 
 ```
 browser (/join/ form) ──POST /api/supporters──▶ this Worker ──X-API-Key──▶ Four Norms API
-                                                 (key lives here only)     POST /groups/falmouth-unplugged/supporters.json
+                                                 (key lives here only)     POST /groups/falmouth-for-intentional-tech/supporters.json
 ```
 
 **Why a Worker?** The site is static (Hugo on GitHub Pages), so it has no server to hide the
@@ -46,9 +46,9 @@ API key or avoid CORS. A Cloudflare Worker is a tiny free server that does just 
    ```bash
    npx wrangler deploy
    ```
-   It prints a URL like `https://falmouth-unplugged-signup.<you>.workers.dev`.
+   It prints a URL like `https://falmouth-for-intentional-tech-signup.<you>.workers.dev`.
 6. In the site's `hugo.toml`, set
-   `signupEndpoint = "https://falmouth-unplugged-signup.<you>.workers.dev/api/supporters"`
+   `signupEndpoint = "https://falmouth-for-intentional-tech-signup.<you>.workers.dev/api/supporters"`
    and push. All Join buttons then go to the on-site `/join/` form.
 
 ## Testing
@@ -60,8 +60,8 @@ npm test          # 14 tests: payload shape, validation, honeypot, 422 passthrou
 
 **Health check after deploying:**
 ```bash
-curl https://falmouth-unplugged-signup.<you>.workers.dev/api/health
-# {"ok":true,"group":"falmouth-unplugged","configured":true}   <- configured:false means the secret isn't set
+curl https://falmouth-for-intentional-tech-signup.<you>.workers.dev/api/health
+# {"ok":true,"group":"falmouth-for-intentional-tech","configured":true}   <- configured:false means the secret isn't set
 ```
 
 **Local, against the real API:**

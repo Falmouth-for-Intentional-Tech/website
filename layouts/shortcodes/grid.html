@@ -1,0 +1,2 @@
+{{/* Usage: {{< grid >}} ...boxes... {{< /grid >}}   Optional: cols="3" for narrower cards. */}}
+<div class="grid{{ with .Get "cols" }} grid-{{ . }}{{ end }}">{{ .Inner }}</div>

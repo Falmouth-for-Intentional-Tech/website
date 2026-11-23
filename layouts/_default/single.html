@@ -1,4 +1,10 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
+<header class="page-head{{ with .Params.head_class }} {{ . }}{{ end }}">
+  {{ with .Params.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.lede }}<div class="lede">{{ . | markdownify }}</div>{{ end }}
+</header>
+<div class="prose">
 {{ .Content }}
+</div>
 {{ end }}

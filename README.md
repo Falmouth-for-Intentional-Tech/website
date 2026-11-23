@@ -27,7 +27,7 @@ Shortcodes you can drop into any page:
 
 ## Sign-ups and Four Norms
 
-The group hub on Four Norms is still named **Falmouth Unplugged** (URL slug `falmouth-unplugged`). Settings are in `hugo.toml`.
+The group hub on Four Norms is **Falmouth for Intentional Tech** (URL slug `falmouth-for-intentional-tech`, under the `turning-life-on` organization). Settings are in `hugo.toml`.
 
 * **On-site sign-up form (`/join/`):** it posts to a small Cloudflare Worker in `worker/`, which adds people to the group through the Four Norms API. The API key stays in Cloudflare and is never put in this repo. Setup and testing are in **`worker/README.md`**.
   * Until `signupEndpoint` is set, every Join button links to the Four Norms form instead, so the site works either way.

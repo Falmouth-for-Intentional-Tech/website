@@ -8,7 +8,7 @@ import json, os, sys, urllib.request
 
 key = os.environ.get("FOUR_NORMS_API_KEY", "").strip()
 org = os.environ.get("FOUR_NORMS_ORG_SLUG", "turning-life-on")
-group = os.environ.get("FOUR_NORMS_GROUP_SLUG", "falmouth-unplugged")
+group = os.environ.get("FOUR_NORMS_GROUP_SLUG", "falmouth-for-intentional-tech")
 if not key:
     print("FOUR_NORMS_API_KEY not set; skipping member count.")
     sys.exit(0)

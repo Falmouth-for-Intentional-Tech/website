@@ -40,10 +40,10 @@ ignoreFiles = ["worker/"]
 
   [[params.partners]]
     name = "Turning Life On (MA coalition)"
-    url  = "https://www.fournorms.com/turning-life-on"
+    url  = "https://www.turninglifeon.org/"
   [[params.partners]]
     name = "Schools Beyond Screens"
-    url  = ""                        # TODO: national SBS link or your chapter page
+    url  = "https://www.schoolsbeyondscreens.com/"
 
 # ------------------------------------------------------------
 #  Navigation (header order)
@@ -72,17 +72,22 @@ ignoreFiles = ["worker/"]
     pageRef = "/classroom-tech"
     weight = 4
   [[menus.main]]
-    name = "Events"
-    pageRef = "/events"
+    name = "Evidence"
+    pageRef = "/evidence"
     weight = 5
   [[menus.main]]
-    name = "Resources"
-    pageRef = "/resources"
+    name = "Events"
+    pageRef = "/events"
     weight = 6
+  # Resources is hidden for now. To bring it back, uncomment these lines:
+  # [[menus.main]]
+  #   name = "Resources"
+  #   pageRef = "/resources"
+  #   weight = 7
   [[menus.main]]
     name = "Get involved"
     pageRef = "/get-involved"
-    weight = 7
+    weight = 8
 
 [markup.goldmark.renderer]
   unsafe = true   # allows the small bits of HTML (cards) in Markdown pages

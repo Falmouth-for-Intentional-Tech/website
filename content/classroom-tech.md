@@ -9,7 +9,7 @@ We're asking Falmouth Public Schools to use classroom technology on purpose: les
 
 These recommendations are adapted from [Schools Beyond Screens](https://schoolsbeyondscreens.com/reform-proposals).
 
-- Eliminate all device use for TK–2.
+- Eliminate all device use for PK–2.
 - Eliminate 1:1 device use for grades 3–8, with limited device use through a computer cart or lab model where it is appropriate for the curriculum.
 - Block student access to YouTube, as well as all gaming, video-streaming and social media, on student devices.
 - Require all apps used for instruction or on school-issued devices to be ad-free.

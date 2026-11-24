@@ -31,7 +31,6 @@ jobs:
       - name: Fetch member count from Four Norms
         env:
           FOUR_NORMS_API_KEY: ${{ secrets.FOUR_NORMS_API_KEY }}
-          FOUR_NORMS_ORG_SLUG: turning-life-on
           FOUR_NORMS_GROUP_SLUG: falmouth-for-intentional-tech
         run: python3 .github/scripts/fetch_fournorms.py
       - id: pages

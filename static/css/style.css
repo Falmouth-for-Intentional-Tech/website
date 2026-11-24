@@ -236,3 +236,17 @@ section[id] { scroll-margin-top: 1rem; }
 .learn-card p { color: var(--muted); margin: 0 0 .8rem; }
 .learn-link { margin-top: auto; font-weight: 600; color: var(--accent); }
 .learn-card:hover .learn-link { color: var(--accent-dark); }
+
+/* Full-width stacked rows: {{< grid cols="1" >}} with {{< box class="row" >}} */
+.grid-1 { grid-template-columns: 1fr; gap: .8rem; }
+.box-body > :first-child { margin-top: 0; }
+.box-body > :last-child { margin-bottom: 0; }
+.box-row { display: grid; grid-template-columns: minmax(180px, 30%) 1fr; gap: 1.5rem; align-items: start; border-left: 4px solid var(--accent-bright); }
+.box-row .box-head { display: flex; align-items: flex-start; gap: .7rem; }
+.box-row .box-head .card-num { flex: none; margin: 0; }
+.box-row .box-head h3 { margin: .2rem 0 0; }
+.box-row .box-body ul { margin-top: 0; }
+@media (max-width: 600px) { .box-row { grid-template-columns: 1fr; gap: .6rem; } }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } }
+.box:not(.box-row) .box-head + .box-body { margin-top: .5rem; }

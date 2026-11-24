@@ -2,11 +2,16 @@
      Usage: {{< box title="Heading" eyebrow="Small label" tag="Status pill" num="1" class="tint" >}}
             Markdown text here.
             {{< /box >}}
-     class: "" (white), "tint" (slate blue), "dark" (charcoal), "accent" (coral edge). */}}
+     class (space-separated): "tint" (slate blue), "dark" (charcoal), "accent" (coral edge),
+     "big" (larger text), "row" (heading on the left, text on the right; stacks on phones). */}}
 <div class="box{{ range split (.Get "class" | default "") " " }}{{ with . }} box-{{ . }}{{ end }}{{ end }}">
-  {{- with .Get "num" }}<span class="card-num">{{ . }}</span>{{ end }}
-  {{- with .Get "eyebrow" }}<p class="box-eyebrow">{{ . }}</p>{{ end }}
-  {{- with .Get "title" }}<h3>{{ . | markdownify }}</h3>{{ end }}
-  {{- with .Get "tag" }}<span class="tag">{{ . }}</span>{{ end }}
-  {{ .Inner | $.Page.RenderString (dict "display" "block") }}
+  {{- if or (.Get "num") (.Get "eyebrow") (.Get "title") (.Get "tag") }}
+  <div class="box-head">
+    {{- with .Get "num" }}<span class="card-num">{{ . }}</span>{{ end }}
+    {{- with .Get "eyebrow" }}<p class="box-eyebrow">{{ . }}</p>{{ end }}
+    {{- with .Get "title" }}<h3>{{ . | markdownify }}</h3>{{ end }}
+    {{- with .Get "tag" }}<span class="tag">{{ . }}</span>{{ end }}
+  </div>
+  {{- end }}
+  <div class="box-body">{{ .Inner | $.Page.RenderString (dict "display" "block") }}</div>
 </div>

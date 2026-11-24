@@ -7,13 +7,13 @@ number in data/home.yaml.
 import json, os, sys, urllib.request
 
 key = os.environ.get("FOUR_NORMS_API_KEY", "").strip()
-org = os.environ.get("FOUR_NORMS_ORG_SLUG", "turning-life-on")
 group = os.environ.get("FOUR_NORMS_GROUP_SLUG", "falmouth-for-intentional-tech")
 if not key:
     print("FOUR_NORMS_API_KEY not set; skipping member count.")
     sys.exit(0)
 
-url = f"https://www.fournorms.com/api/v1/organizations/{org}/groups/{group}.json"
+# Group-key endpoint: "Get your own group using a group API key" (Four Norms Groups API).
+url = f"https://www.fournorms.com/api/v1/groups/{group}.json"
 req = urllib.request.Request(url, headers={"X-API-Key": key, "Accept": "application/json"})
 try:
     with urllib.request.urlopen(req, timeout=20) as r:

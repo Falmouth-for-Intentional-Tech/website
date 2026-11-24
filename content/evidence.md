@@ -54,7 +54,7 @@ For more, see Turning Life On's [Learn page](https://www.turninglifeon.org/learn
 
 ### District examples
 
-{{< grid >}}
+{{< grid cols="2" >}}
 {{< box class="accent" title="Cambridge, MA" tag="Policy in place" >}}
 Cambridge Public Schools has [published grade-by-grade limits](https://www.cpsd.us/administration/information-communication-technology-services/healthy-habits-and-tech-limits). Students in PreK–2 generally don't have individual screen-based devices, and grades 3–5 have only limited access. Screens are generally not allowed at lunch or recess through 8th grade, and devices aren't used as rewards or free-time activities. Upper grades build in off-screen breaks every 20 to 30 minutes, and the district is adding evening cutoff times for digital homework.
 {{< /box >}}

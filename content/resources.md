@@ -4,7 +4,7 @@ title: Resources
 
 <!-- TODO: curate. Group by audience so people find things fast. -->
 
-## For parents
+## For families
 
 - *Book, article, or guide (link)*: one line on why it's useful
 - *Family tech agreement template (link)*

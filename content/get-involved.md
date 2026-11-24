@@ -18,7 +18,7 @@ See [Events]({{< relref "events" >}}) for the next one. No prep needed.
 
 ## 3. Spread the word
 
-- Forward this site to one parent who'd care.
+- Forward this site to one family who'd care.
 - Ask your PTO/PTA to share it in their newsletter.
 - Bring a friend to the next meeting.
 

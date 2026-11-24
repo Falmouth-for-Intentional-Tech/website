@@ -8,9 +8,9 @@ disableKinds = ["taxonomy", "term", "RSS"]
 ignoreFiles = ["worker/"]
 
 [params]
-  tagline  = "Falmouth parents working toward healthier, more intentional tech use in our schools and homes."
+  tagline  = "Falmouth families working toward healthier, more intentional tech use in our schools and homes."
   location = "Falmouth, MA"
-  footerBlurb = "Falmouth parents working toward healthier, more intentional tech use for our kids."
+  footerBlurb = "Falmouth families working toward healthier, more intentional tech use for our kids."
   email    = "hello@falmouthfit.org"   # group contact email (Cloudflare Email Routing)
 
   # Every "Join" button on the site uses signupURL, so switching

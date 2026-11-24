@@ -14,7 +14,7 @@ title: Events
 **Time:** TBD
 **Where:** TBD (Falmouth)
 
-Open to all Falmouth parents and educators. RSVP and reminders are handled through our Four Norms hub:
+Open to all Falmouth families and educators. RSVP and reminders are handled through our Four Norms hub:
 
 {{< fournorms >}}
 

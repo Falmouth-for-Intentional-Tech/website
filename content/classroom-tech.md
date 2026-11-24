@@ -2,7 +2,7 @@
 title: Classroom Tech
 description: What we're asking Falmouth Public Schools to change about classroom technology, and why.
 eyebrow: "What we're asking for"
-lede: "We're asking Falmouth Public Schools to use classroom technology on purpose: less of it in the early grades, clear limits on what's allowed, and a real say for parents. For the research behind it and what other districts are doing, see [The Evidence](/evidence/)."
+lede: "We're asking Falmouth Public Schools to use classroom technology on purpose: less of it in the early grades, clear limits on what's allowed, and a real say for families. For the research behind it and what other districts are doing, see [The Evidence](/evidence/)."
 ---
 
 ## What we're advocating for
@@ -24,7 +24,7 @@ These recommendations are adapted from [Schools Beyond Screens](https://schoolsb
 - Prohibit all student device use during passing periods, lunch and recess.
 - Prohibit screen time from being used as a reward, incentive or behavioral reinforcement for students.
 {{< /box >}}
-{{< box class="row" num="4" title="Transparency and choice for parents" >}}
+{{< box class="row" num="4" title="Transparency and choice for families" >}}
 - Be transparent about technology use in schools, both on devices and in teacher-led instruction.
 - Create clear pathways for parents and students who wish to opt out of device-based instruction, without penalty or reprisal, and provide low-tech alternatives.
 - Require all EdTech products to meet independent standards for efficacy, and to prove that any benefits outweigh potential risks.

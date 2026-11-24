@@ -5,6 +5,12 @@ eyebrow: "Why it matters"
 lede: "The research and real-world examples behind [what we're asking Falmouth to change](/classroom-tech/)."
 ---
 
+## Watch: a neuroscientist's testimony to the U.S. Senate
+
+In January 2026, Dr. Jared Cooney Horvath, a former teacher turned cognitive neuroscientist who studies how people learn, testified at a [U.S. Senate committee hearing](https://www.c-span.org/program/senate-committee/lawmakers-hear-testimony-on-impact-of-technology-on-americas-youth/671683) on technology's impact on young people. He told senators he has never received funding from big tech. His five-minute opening statement:
+
+{{< video id="Fd-_VDYit3U" title="Dr. Jared Cooney Horvath on how screen time hurts kids' cognitive development (C-SPAN)" >}}
+
 ## What the research says
 
 When Los Angeles Unified wrote its new screen time policy, its Office of Research and Program Evaluation [reviewed the evidence](https://drive.google.com/file/d/1aUGrwgNFKvCq3CBmO3dzCC3kKnOenpx3/view). Their key findings:
@@ -30,12 +36,6 @@ Families differ in how closely they can supervise home use, so unrestricted take
 {{< box class="dark big" >}}
 **The bottom line:** rules should be strictest for the youngest students and loosen gradually with age, and districts should keep measuring what their technology actually does for students.
 {{< /box >}}
-
-### Watch: a neuroscientist's testimony to the U.S. Senate
-
-In January 2026, Dr. Jared Cooney Horvath, a former teacher turned cognitive neuroscientist who studies how people learn, testified at a [U.S. Senate committee hearing](https://www.c-span.org/program/senate-committee/lawmakers-hear-testimony-on-impact-of-technology-on-americas-youth/671683) on technology's impact on young people. He told senators he has never received funding from big tech. His five-minute opening statement:
-
-{{< video id="Fd-_VDYit3U" title="Dr. Jared Cooney Horvath on how screen time hurts kids' cognitive development (C-SPAN)" >}}
 
 ## What other districts are doing
 

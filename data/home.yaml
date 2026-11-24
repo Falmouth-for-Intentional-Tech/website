@@ -16,7 +16,7 @@ hero:
 stat:
   # Live count comes from Four Norms at build time (data/fournorms.json, written by the
   # GitHub Action; needs the FOUR_NORMS_API_KEY repo secret). Fields below are added up.
-  count_fields: [registered_member_count, email_subscriber_count, supporter_count]
+  count_fields: [registered_member_count, supporter_count]   # email_subscriber_count overlaps these (10 + 4 = 14 in Nov 2026)
   label: "Falmouth parents and counting"
   minimum: 10            # below this, show the fallback instead of a small number
   fallback_number: "New"

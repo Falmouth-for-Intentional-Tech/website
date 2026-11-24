@@ -1,5 +1,6 @@
 ---
 title: Events
+description: "Upcoming meetings and events from Falmouth for Intentional Tech, a group of Falmouth, MA families working on screens and kids."
 ---
 
 <!-- Add new events at the top. Copy a block and edit it. -->

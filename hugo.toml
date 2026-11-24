@@ -6,6 +6,7 @@ locale = "en-us"
 title = "Falmouth for Intentional Tech"
 disableKinds = ["taxonomy", "term", "RSS"]
 ignoreFiles = ["worker/"]
+enableRobotsTXT = true
 
 [params]
   tagline  = "Falmouth families working toward healthier, more intentional tech use in our schools and homes."

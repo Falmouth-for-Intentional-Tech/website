@@ -1,5 +1,8 @@
 ---
 title: Resources
+description: "Books, guides and tools for Falmouth families thinking about screens, phones and kids."
+noindex: true   # placeholder page: remove these two lines once it has real content
+sitemap: { disable: true }
 ---
 
 <!-- TODO: curate. Group by audience so people find things fast. -->

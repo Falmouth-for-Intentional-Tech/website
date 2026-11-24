@@ -1,5 +1,6 @@
 ---
 title: Get involved
+description: "Ways to help Falmouth for Intentional Tech: join the group, sign petitions and pledges, and talk with Falmouth schools about classroom tech."
 ---
 
 ## 1. Join the group

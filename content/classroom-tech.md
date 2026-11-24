@@ -11,7 +11,7 @@ These recommendations are adapted from [Schools Beyond Screens](https://schoolsb
 
 {{< grid cols="1" >}}
 {{< box class="row" num="1" title="Fewer devices in the early grades" >}}
-- Eliminate all device use for PK–2.
+- Eliminate all device use for K–2.
 - Eliminate 1:1 device use for grades 3–8, with limited device use through a computer cart or lab model where it is appropriate for the curriculum.
 {{< /box >}}
 {{< box class="row" num="2" title="Safer devices and apps" >}}

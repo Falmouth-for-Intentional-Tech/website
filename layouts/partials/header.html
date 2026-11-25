@@ -1,6 +1,7 @@
+{{ partial "translate.html" . }}
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="{{ "" | relURL }}">{{ site.Title }}</a>
+    <a class="brand notranslate" translate="no" href="{{ "" | relURL }}">{{ site.Title }}</a>
     <nav>
       {{ $current := . }}
       {{ range site.Menus.main }}

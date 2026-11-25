@@ -1,0 +1,15 @@
+{{- /* Links that open the current page in Google Translate's proxy (e.g. falmouthfit-org.translate.goog).
+       Add or remove languages in hugo.toml under [[params.translate]]. */ -}}
+{{- with site.Params.translate }}
+{{- $host := site.Params.translateDomain | default (urls.Parse site.BaseURL).Host | replaceRE "-" "--" | replaceRE `\.` "-" }}
+{{- $path := $.RelPermalink }}
+<div class="translate-bar">
+  <div class="wrap">
+    <span class="translate-icon" aria-hidden="true">🌐</span>
+    {{- range $i, $l := . }}
+    {{- if $i }}<span aria-hidden="true">·</span>{{ end }}
+    <a href="https://{{ $host }}.translate.goog{{ $path }}?_x_tr_sl=en&_x_tr_tl={{ $l.code }}&_x_tr_hl={{ $l.code }}" lang="{{ $l.code }}" hreflang="{{ $l.code }}" rel="nofollow">{{ $l.name }}</a>
+    {{- end }}
+  </div>
+</div>
+{{- end }}

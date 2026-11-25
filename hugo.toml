@@ -25,6 +25,15 @@ enableRobotsTXT = true
   petitionURL   = ""                 # optional: leave "" to hide the petition button
   petitionLabel = "Sign the petition"
 
+  # "Translate" links at the top of every page (Google Translate). Remove a block to drop a language.
+  translateDomain = "falmouthfit.org"   # the public site Google Translate should load
+  [[params.translate]]
+    name = "Español"
+    code = "es"
+  [[params.translate]]
+    name = "Português"
+    code = "pt"
+
   # ----------------------------------------------------------
   #  Four Norms group (your community hub)
   #  All Join buttons go to groupURL + "#register" (the sign-up form on that page).

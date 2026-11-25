@@ -250,3 +250,9 @@ section[id] { scroll-margin-top: 1rem; }
 .grid-2 { grid-template-columns: repeat(2, 1fr); }
 @media (max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } }
 .box:not(.box-row) .box-head + .box-body { margin-top: .5rem; }
+
+/* Translate links (layouts/partials/translate.html) */
+.translate-bar { background: var(--tint-soft); font-size: .85rem; }
+.translate-bar .wrap { display: flex; justify-content: flex-end; align-items: center; gap: .45rem; padding-top: .3rem; padding-bottom: .3rem; color: var(--muted); }
+.translate-bar a { color: var(--ink); text-decoration: none; }
+.translate-bar a:hover { color: var(--accent); text-decoration: underline; }

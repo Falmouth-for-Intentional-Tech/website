@@ -7,7 +7,7 @@ preview_urls = false    # no extra per-version preview URLs
 [vars]
 FOUR_NORMS_GROUP_SLUG = "falmouth-for-intentional-tech"
 # Comma-separated origins allowed to submit the form. Add your custom domain when you have one.
-ALLOWED_ORIGINS = "https://falmouthfit.org,https://www.falmouthfit.org,http://localhost:1313"
+ALLOWED_ORIGINS = "https://falmouthfit.org,https://www.falmouthfit.org,http://localhost:1313,https://falmouthfit-org.translate.goog"
 
 # The API key is NOT stored here. Set it as an encrypted secret:
 #   npx wrangler secret put FOUR_NORMS_API_KEY

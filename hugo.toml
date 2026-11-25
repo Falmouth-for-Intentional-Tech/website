@@ -64,7 +64,7 @@ enableRobotsTXT = true
     pageRef = "/"
     weight = 1
     [menus.main.params]
-      anchor = "about"
+      anchor = "top"      # top of the home page (banner and intro)
   [[menus.main]]
     name = "The Data"
     pageRef = "/"

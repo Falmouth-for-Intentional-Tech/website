@@ -1,15 +1,32 @@
 {{- /* Links that open the current page in Google Translate's proxy (e.g. falmouthfit-org.translate.goog).
-       Add or remove languages in hugo.toml under [[params.translate]]. */ -}}
+       Add or remove languages in hugo.toml under [[params.translate]].
+       On a translated page, an "English" link appears that goes back to the original site. */ -}}
 {{- with site.Params.translate }}
-{{- $host := site.Params.translateDomain | default (urls.Parse site.BaseURL).Host | replaceRE "-" "--" | replaceRE `\.` "-" }}
+{{- $domain := site.Params.translateDomain | default (urls.Parse site.BaseURL).Host }}
+{{- $host := $domain | replaceRE "-" "--" | replaceRE `\.` "-" }}
 {{- $path := $.RelPermalink }}
-<div class="translate-bar">
+<div class="translate-bar notranslate" translate="no">
   <div class="wrap">
     <span class="translate-icon" aria-hidden="true">🌐</span>
+    <a class="translate-en" href="https://{{ $domain }}{{ $path }}" lang="en" hreflang="en" hidden>English</a><span class="translate-en-sep" aria-hidden="true" hidden>·</span>
     {{- range $i, $l := . }}
     {{- if $i }}<span aria-hidden="true">·</span>{{ end }}
     <a href="https://{{ $host }}.translate.goog{{ $path }}?_x_tr_sl=en&_x_tr_tl={{ $l.code }}&_x_tr_hl={{ $l.code }}" lang="{{ $l.code }}" hreflang="{{ $l.code }}" rel="nofollow">{{ $l.name }}</a>
     {{- end }}
   </div>
 </div>
+<script>
+  // Only on Google Translate's copy of the site: show "English" and send it to the real site
+  // (Google rewrites ordinary links to stay translated, so set the address directly).
+  (function () {
+    if (!/\.translate\.goog$/.test(location.hostname)) return;
+    var en = document.querySelector('.translate-en'), sep = document.querySelector('.translate-en-sep');
+    if (!en) return;
+    en.hidden = false; if (sep) sep.hidden = false;
+    en.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.top.location.href = 'https://{{ $domain }}' + location.pathname + location.hash;
+    });
+  })();
+</script>
 {{- end }}

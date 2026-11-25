@@ -95,7 +95,7 @@ enableRobotsTXT = true
   #   pageRef = "/resources"
   #   weight = 7
   [[menus.main]]
-    name = "Get involved"
+    name = "Get Involved"
     pageRef = "/get-involved"
     weight = 8
 

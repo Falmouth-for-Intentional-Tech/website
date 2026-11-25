@@ -17,7 +17,7 @@ Almost everything is in **`hugo.toml`**:
 
 **Home page text** (hero, stat, quote, About, The Data, Our Goals, closing) is in **`data/home.yaml`**. The home page is one long page with `#about`, `#data`, and `#goals` sections, linked from the nav.
 
-Other pages (Classroom Tech, Events, Resources, Get involved) live in `content/*.md` as plain Markdown. Colours are at the top of `static/css/style.css`.
+Other pages (Classroom Tech, Events, Resources, Get Involved) live in `content/*.md` as plain Markdown. Colours are at the top of `static/css/style.css`.
 
 Shortcodes you can drop into any page:
 - `{{< join >}}`: Join and petition buttons

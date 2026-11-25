@@ -267,3 +267,28 @@ section[id] { scroll-margin-top: 1rem; }
 
 /* Photo in the home page "About" section */
 .about-photo { display: block; width: 100%; height: auto; max-height: 520px; object-fit: cover; object-position: center 70%; border-radius: 16px; margin: 1.5rem 0 1rem; }
+
+/* Photos placed in page content with the photo shortcode */
+.photo { margin: 0 0 1.5rem; }
+.photo img { display: block; width: 100%; height: auto; max-height: 440px; object-fit: cover; border-radius: 16px; }
+.photo figcaption { font-size: .7rem; color: var(--muted); text-align: right; margin-top: .3rem; }
+.photo figcaption a { color: inherit; }
+
+/* Page header with a photo beside the title (front matter: head_photo) */
+.page-head.has-photo { display: grid; grid-template-columns: 1.15fr 1fr; gap: 1.8rem; align-items: center; }
+.page-head-photo { margin: 0; }
+.page-head-photo img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; }
+.page-head-photo figcaption { font-size: .68rem; color: var(--ink); opacity: .75; text-align: right; margin-top: .25rem; }
+.page-head-photo figcaption a { color: inherit; }
+@media (max-width: 760px) { .page-head.has-photo { grid-template-columns: 1fr; gap: 1.2rem; } }
+
+/* Smaller photo floated beside text (photo shortcode, class="side") */
+.photo-side { float: right; width: 36%; margin: .3rem 0 1rem 1.5rem; }
+.photo-side img { aspect-ratio: 4 / 3; }
+.prose .grid { clear: both; }
+@media (max-width: 600px) { .photo-side { float: none; width: 100%; margin: 0 0 1rem; } }
+
+/* Photo beside a box inside a grid */
+.grid > .photo { margin: 0; display: flex; flex-direction: column; }
+.grid > .photo img { flex: 1; height: 100%; min-height: 220px; max-height: none; object-fit: cover; }
+.grid > .box-big { display: flex; align-items: center; }

@@ -1,0 +1,6 @@
+{{- /* Usage: {{< photo src="img/file.jpg" alt="What the photo shows" credit="Photo by ... on Unsplash" class="side" >}}
+       credit may contain HTML links, as copied from Unsplash. class="side" floats a smaller photo to the right. */ -}}
+<figure class="photo{{ with .Get "class" }} photo-{{ . }}{{ end }}">
+  <img src="{{ .Get "src" | relURL }}" alt="{{ .Get "alt" }}" loading="lazy">
+  {{- with .Get "credit" }}<figcaption>{{ . | safeHTML }}</figcaption>{{ end }}
+</figure>

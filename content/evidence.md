@@ -33,9 +33,12 @@ Families differ in how closely they can supervise home use, so unrestricted take
 {{< /box >}}
 {{< /grid >}}
 
+{{< grid cols="2" >}}
+{{< photo src="img/art-room-table.jpg" alt="Young students drawing with markers and pencils around an art-room table" credit=`Photo by <a href="https://unsplash.com/@cdc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">CDC</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>` >}}
 {{< box class="dark big" >}}
 **The bottom line:** rules should be strictest for the youngest students and loosen gradually with age, and districts should keep measuring what their technology actually does for students.
 {{< /box >}}
+{{< /grid >}}
 
 ## What other districts are doing
 

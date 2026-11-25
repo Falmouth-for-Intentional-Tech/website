@@ -1,8 +1,16 @@
 {{ define "main" }}
-<header class="page-head{{ with .Params.head_class }} {{ . }}{{ end }}">
+<header class="page-head{{ with .Params.head_class }} {{ . }}{{ end }}{{ if .Params.head_photo }} has-photo{{ end }}">
+  <div class="page-head-text">
   {{ with .Params.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
   <h1>{{ .Title }}</h1>
   {{ with .Params.lede }}<div class="lede">{{ . | markdownify }}</div>{{ end }}
+  </div>
+  {{ with .Params.head_photo }}
+  <figure class="page-head-photo">
+    <img src="{{ . | relURL }}" alt="{{ $.Params.head_photo_alt }}">
+    {{ with $.Params.head_photo_credit }}<figcaption>{{ . | safeHTML }}</figcaption>{{ end }}
+  </figure>
+  {{ end }}
 </header>
 <div class="prose">
 {{ .Content }}

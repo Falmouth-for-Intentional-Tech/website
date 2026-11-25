@@ -3,7 +3,11 @@ title: Classroom Tech
 description: What we're asking Falmouth Public Schools to change about classroom technology, and why.
 eyebrow: "What we're asking for"
 lede: "We're asking Falmouth Public Schools to use classroom technology on purpose: less of it in the early grades, clear limits on what's allowed, and a real say for families. For the research behind it and what other districts are doing, see [The Evidence](/evidence/)."
+head_photo: "img/classroom-sketching.jpg"
+head_photo_alt: "A student in glasses sketching from a drawing book, with classmates drawing at the table behind him"
+head_photo_credit: 'Photo by <a href="https://unsplash.com/@cdc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">CDC</a> on <a href="https://unsplash.com/photos/boy-in-green-sweater-writing-on-white-paper-GDokEYnOfnE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 ---
+
 
 ## What we're advocating for
 

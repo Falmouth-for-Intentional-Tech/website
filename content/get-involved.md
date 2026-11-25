@@ -1,5 +1,5 @@
 ---
-title: Get involved
+title: Get Involved
 description: "Ways to help Falmouth for Intentional Tech: join the group, sign petitions and pledges, and talk with Falmouth schools about classroom tech."
 ---
 
@@ -9,19 +9,16 @@ Create a free account and join our local group. That's where we keep the member 
 
 {{< fournorms >}}
 
-### Take action: petitions & pledges
+## 2. Spread the word
 
-{{< fournorms-embed "actions" >}}
-
-## 2. Come to a meeting
-
-See [Events]({{< relref "events" >}}) for the next one. No prep needed.
-
-## 3. Spread the word
-
-- Forward this site to one family who'd care.
+- Forward this site to one family who cares about screen time and classroom tech.
 - Ask your PTO/PTA to share it in their newsletter.
 - Bring a friend to the next meeting.
+
+## 3. Come to a meeting
+<p class="note">We're currently planning meetings and events. Check back soon, or <a href="{{< relref "join" >}}">join the group</a> to receive updates when dates are announced.</p>
+
+See [Events]({{< relref "events" >}}) for the next one. No prep needed.
 
 ## 4. Help out
 

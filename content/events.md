@@ -7,6 +7,8 @@ description: "Upcoming meetings and events from Falmouth for Intentional Tech, a
 
 ## Upcoming events
 
+<p class="note">We're currently planning meetings and events. Check back soon, or <a href="{{< relref "join" >}}">join the group</a> to receive updates when dates are announced.</p>
+
 {{< fournorms-embed "events" >}}
 
 ## Next meeting

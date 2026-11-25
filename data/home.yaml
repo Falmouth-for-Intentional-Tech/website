@@ -44,6 +44,9 @@ about:
     - >-
       We bring families together to share what's working, learn from the
       research, and work constructively with our schools.
+  # Photo shown under the paragraphs above. Set photo: "" to hide it.
+  photo: "img/woods-hole-bikes.jpg"
+  photo_alt: "Two kids on bikes looking out at the boats on the Woods Hole waterfront"
   leaders: "Organized by volunteers from Falmouth families."   # TODO: names, optional
   # Partner cards shown side by side under "About". Add or remove entries freely.
   partners:

@@ -1,16 +1,18 @@
 :root {
-  /* Palette: charcoal, slate, slate blue + one coral accent */
-  --ink: #484a47;           /* charcoal: headings, body text, closing box */
-  --muted: #5c6d70;         /* slate: supporting text */
-  --bg: #f4f6f7;            /* cool off-white page */
+  /* Palette drawn from a photo of Nobska Light (static/img/nobska-light.jpg) */
+  --ink: #2c3e57;           /* deep water navy: headings, body text, closing band */
+  --muted: #5a6878;         /* the Sound: supporting text */
+  --bg: #faf8f4;            /* lighthouse white: page */
   --card: #ffffff;
-  --accent: #c93c3c;        /* coral (deep): buttons, links (AA with white) */
-  --accent-dark: #a8302f;   /* hover */
-  --accent-bright: #ef5b5b; /* coral (bright): decorative lines only, never under text */
-  --tint: #c5d3dd;          /* slate blue: stat band, data cards */
-  --tint-soft: #e8eef2;     /* light slate: notes, selected form option */
-  --tint-border: #c5d3dd;
-  --line: #dbe3e8;
+  --accent: #c4141c;        /* Nobska roof red: buttons, links (AA with white) */
+  --accent-dark: #9e1016;   /* hover */
+  --accent-bright: #e0262b; /* bright roof red: decorative lines only, never under text */
+  --gold: #b8893a;          /* beach grass: decorative lines only */
+  --sand: #efe6d6;          /* sand: note boxes */
+  --tint: #c9d5e6;          /* sky: stat band, page headers, data cards */
+  --tint-soft: #eef2f7;     /* pale sky: cards, selected form option */
+  --tint-border: #c9d5e6;
+  --line: #e2e5ea;
   --radius: 10px;
 }
 
@@ -80,7 +82,7 @@ main th + th, main td + td { border-left: 1px solid var(--line); }
 main tr:last-child td { border-bottom: 0; }
 @media (max-width: 600px) { main th, main td { padding: .55rem .6rem; font-size: .9rem; } }
 
-.note { background: var(--tint-soft); border-left: 4px solid var(--accent-bright); padding: .8rem 1rem; border-radius: 0 var(--radius) var(--radius) 0; }
+.note { background: var(--sand); border-left: 4px solid var(--gold); padding: .8rem 1rem; border-radius: 0 var(--radius) var(--radius) 0; }
 
 /* Footer */
 .site-footer { border-top: 1px solid var(--line); background: var(--card); padding: 2rem 0 1.2rem; color: var(--muted); font-size: .92rem; margin-top: 2rem; }
@@ -114,7 +116,7 @@ section[id] { scroll-margin-top: 1rem; }
 .stat { display: flex; flex-direction: column; }
 .stat-number { font-size: 3rem; font-weight: 800; color: var(--ink); line-height: 1; }
 .stat-label { color: var(--muted); margin-top: .4rem; }
-.pull { margin: 0; font-size: 1.25rem; font-style: italic; border-left: 4px solid var(--accent-bright); padding-left: 1.2rem; }
+.pull { margin: 0; font-size: 1.25rem; font-style: italic; border-left: 4px solid var(--gold); padding-left: 1.2rem; }
 .pull cite { display: block; font-size: .9rem; font-style: normal; color: var(--muted); margin-top: .5rem; }
 
 .partners { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
@@ -217,7 +219,7 @@ section[id] { scroll-margin-top: 1rem; }
 .tag { display: inline-block; font-size: .78rem; font-weight: 600; background: var(--tint); color: var(--ink); border-radius: 999px; padding: .1rem .6rem; margin-bottom: .2rem; }
 
 /* Quote from the district, set against the evidence */
-.quote-vs { margin: 1.2rem 0; font-size: 1.3rem; font-style: italic; border-left: 4px solid var(--accent-bright); padding: .2rem 0 .2rem 1.2rem; }
+.quote-vs { margin: 1.2rem 0; font-size: 1.3rem; font-style: italic; border-left: 4px solid var(--gold); padding: .2rem 0 .2rem 1.2rem; }
 .quote-vs cite { display: block; font-size: .9rem; font-style: normal; color: var(--muted); margin-top: .4rem; }
 
 @media (max-width: 600px) {
@@ -231,7 +233,7 @@ section[id] { scroll-margin-top: 1rem; }
 .learn-heading { margin: 2rem 0 .2rem; font-size: 1.15rem; }
 .learn { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin: 1rem 0 1.5rem; }
 .learn-card { display: flex; flex-direction: column; text-decoration: none; color: var(--ink); background: var(--tint-soft); border-color: var(--tint); border-left: 4px solid var(--accent-bright); transition: transform .15s, box-shadow .15s; }
-.learn-card:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0 6px 18px rgba(72,74,71,.12); }
+.learn-card:hover { color: var(--ink); transform: translateY(-2px); box-shadow: 0 6px 18px rgba(44,62,87,.14); }
 .learn-card h3 { margin: .1rem 0 .4rem; }
 .learn-card p { color: var(--muted); margin: 0 0 .8rem; }
 .learn-link { margin-top: auto; font-weight: 600; color: var(--accent); }
@@ -256,3 +258,9 @@ section[id] { scroll-margin-top: 1rem; }
 .translate-bar .wrap { display: flex; justify-content: flex-end; align-items: center; gap: .45rem; padding-top: .3rem; padding-bottom: .3rem; color: var(--muted); }
 .translate-bar a { color: var(--ink); text-decoration: none; }
 .translate-bar a:hover { color: var(--accent); text-decoration: underline; }
+
+/* Home page photo banner (layouts/index.html, data/home.yaml "banner") */
+.banner { margin: 0; position: relative; }
+.banner img { display: block; width: 100%; height: clamp(200px, 34vw, 460px); object-fit: cover; object-position: 30% 62%; }
+.banner figcaption { position: absolute; right: .5rem; bottom: .3rem; font-size: .62rem; color: rgba(255,255,255,.85); text-shadow: 0 1px 2px rgba(0,0,0,.6); }
+.banner figcaption a { color: inherit; }

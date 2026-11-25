@@ -3,6 +3,13 @@
 #  Lines marked TODO are placeholders.
 # ------------------------------------------------------------
 
+# Photo across the top of the home page (also used when the site is shared). Set image: "" to hide it.
+banner:
+  image: "img/nobska-light.jpg"
+  alt: "Nobska Light in Woods Hole, seen from the water"
+  # Credit shown small in the photo's corner (HTML allowed, as copied from Unsplash).
+  credit: 'Photo by <a href="https://unsplash.com/@emiddlephoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Evan Middleton</a> on <a href="https://unsplash.com/photos/white-and-red-lighthouse-on-island-surrounded-by-water-under-white-clouds-during-daytime-OptHIXKHuSQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
+
 hero:
   eyebrow: "Family to family · Falmouth, MA"
   heading: "Room to grow up."          # TODO: your slogan

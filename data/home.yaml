@@ -14,7 +14,7 @@ hero:
   eyebrow: "Family to family · Falmouth, MA"
   heading: "Room to grow up."          # TODO: your slogan
   text: >-
-    We are Falmouth families advocating for school and home environments where focus, play, and real connection come first. Our goal isn't to eliminate technology, but ensure it is used purposefully.
+    We're Falmouth families who want our kids to have more time to play, think and talk to each other, at school and at home. Technology has a place in school. We would just like it to be a smaller and more purposeful one.
 
   # Secondary button next to "Join". Leave url "" to hide it.
   secondary_label: "Just send me updates"
@@ -32,7 +32,7 @@ stat:
 quote:
   # TODO: your own words
   text: >-
-    Come as you are, whatever your family's current tech routine looks like. There is no judgment here. We are all just trying to figure this out together. 
+    Whatever screen rules your family has, or doesn't have, you're welcome here. Most of us are figuring this out as we go.
 
   attribution: ""
 
@@ -40,10 +40,9 @@ about:
   heading: "You're not the only one thinking about this"
   paragraphs:
     - >-
-      Families everywhere are navigating the same challenges: the constant draw of screens at home, increasing device use at school, and the social pressure of "everyone else" having a phone. It’s hard to set boundaries when you feel like you’re doing it alone.
+      If you've argued about screens at bedtime, wondered why your elementary school student is bringing home a Chromebook, or felt like your kid is the only one without a phone... you're not the only one.
     - >-
-      We bring families together to share what's working, learn from the
-      research, and work constructively with our schools.
+      This group grew out of side conversations, and a growing appreciation that we share a lot of the same worries. So, let's get together, compare notes, read the research, and talk with our schools about what we find.
   # Photo shown under the paragraphs above. Set photo: "" to hide it.
   photo: "img/woods-hole-bikes.jpg"
   photo_alt: "Two kids on bikes looking out at the boats on the Woods Hole waterfront"
@@ -81,12 +80,12 @@ data:
 goals:
   heading: "What we're working toward"
   cards:
-    - title: "Informed choices"
-      text: "Clear, readable summaries of the evidence so families can decide what's right for them."
-    - title: "Thoughtful school policy"
-      text: "Working with teachers and administrators on purposeful classroom tech and phone policies."
-    - title: "Screen-free time together"
-      text: "Events and shared norms that make it easier to choose play, outdoors, and friends."
+    - title: "Know what the research says"
+      text: "Short, plain summaries of the studies, so families can decide for themselves."
+    - title: "Better school policies"
+      text: "Working with teachers and the district on when classrooms use devices, and on clear phone rules."
+    - title: "More time offline, together"
+      text: "Get-togethers and shared family agreements. Saying no to screens is easier when other families are saying it too."
 
 # Link cards shown right after "What we're working toward".
 learn:
@@ -94,15 +93,15 @@ learn:
   cards:
     - eyebrow: "Classroom Tech"
       title: "What we're asking Falmouth schools to change"
-      text: "Our recommendations, what the district does today, and the questions we're asking."
+      text: "What we'd like to see change, and how it compares with what the district does now."
       page: "/classroom-tech"
       label: "See our asks"
     - eyebrow: "The Evidence"
       title: "The research and what other districts are doing"
-      text: "Key findings on screens in school, a Senate testimony video, and examples from Cambridge, LA, Worcester and Boston."
+      text: "What studies have found, a five-minute Senate testimony worth watching, and what Cambridge, LA, Worcester and Boston are doing."
       page: "/evidence"
       label: "See the evidence"
 
 closing:
   heading: "You don't have to figure this out alone."
-  text: "Join the group to hear about meetings, events, and ways to help."
+  text: "Join and we'll let you know about meetings, events and ways to pitch in."
